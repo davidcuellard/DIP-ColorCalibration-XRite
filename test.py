@@ -8,8 +8,11 @@ Objetivo 1: Calibración de color
 """
 
 import calibracionColor
+import os
 
-folder="/home/tg1907/Documents/Tesis5/clases/calibcolor/images/"
+directory = os.getcwd()
+
+folder= directory + "/DIP-ColorCalibration-XRite/"
 
 #checker= folder + "drone0/CCiD_0.png"
 #warpedout= folder + "drone0/warped_1.png"
@@ -104,14 +107,18 @@ folder="/home/tg1907/Documents/Tesis5/clases/calibcolor/images/"
 #dechg= folder + "14/DEBPD14_1.png"
 #matrix= folder + "14/matrix14_1.txt"
 
-checker= folder + "14/CCi14_2.jpg"
-warpedout= folder + "14/warped14_2.png"
-checkerout= folder + "14/CCD14_2.png"
-de= folder + "14/DEColD14_2.png"
-dechg= folder + "14/DEBPD14_2.png"
-matrix= folder + "14/matrix14_2.txt"
+checker= folder + "CCi13_2.jpg"
+warpedout= folder + "warped14_2.png"
+checkerout= folder + "CCD14_2.png"
+de= folder + "DEColD14_2.png"
+dechg= folder + "DEBPD14_2.png"
+matrix= folder + "matrix14_2.txt"
 
-cc=calibracionColort.imagenes(checker=checker,scalefactor=1,checkerout=checkerout,warpedout=warpedout,de=de,dechg=dechg,matrix=matrix)
+print(checker)
+print("Hello World! Welcome to Python Examples.")
+
+
+cc=calibracionColor.imagenes(checker=checker,scalefactor=1,checkerout=checkerout,warpedout=warpedout,de=de,dechg=dechg,matrix=matrix)
 
 cc.checkerCalibration()
 
