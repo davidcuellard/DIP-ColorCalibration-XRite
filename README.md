@@ -8,3 +8,5 @@
 - Class: colorCalibration.py
 - Test: test.py
 - Calibration chart: CCi13_2.jpg
+
+Play test.py
