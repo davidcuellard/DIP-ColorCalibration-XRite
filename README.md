@@ -9,4 +9,8 @@
 - Test: test.py
 - Calibration chart: CCi13_2.jpg
 
-Play test.py
+## `Run code`
+Download repository
+
+Run using:
+$ python3 test.py
