@@ -14,3 +14,7 @@ Download repository
 
 Run using:
 $ python3 test.py
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
